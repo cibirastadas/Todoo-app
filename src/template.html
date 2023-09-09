@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <nav-bar>
+      <a href="/" slot="nav-link">Home</a>
+      <a href="/" slot="nav-link">About</a>
+    </nav-bar>
+    <div class="content">
+      <header>
+        <h1 class="header">Todo List</h1>
+        <form class="add-task-form">
+          <input
+            class="add-task-form__input"
+            type="text"
+            placeholder="Add new todo..."
+            required
+          />
+          <button class="button button--yellow button--icon" type="submit">
+            <img class="add-task-form__add-icon icon" alt="Add task image" />
+            Add
+          </button>
+        </form>
+      </header>
+      <section class="task-list">
+        <!-- <div class="task-list__item">
+          <input
+            class="task-list__input"
+            type="text"
+            placeholder="Preview Task"
+            readonly
+          />
+          <div class="task-list__actions">
+            <button
+              class="button button--green"
+              type="button"
+              onclick="onCompleteTask(this)"
+            >
+                  <img class="task-list__edit-icon icon" alt="Add task image" />
+              Edit
+            </button>
+            <button
+              class="button button--red"
+              type="button"
+              onclick="onDeleteTask(this)"
+            >
+                  <img class="task-list__delete-icon icon" alt="Add task image" />
+              Delete
+            </button>
+          </div>
+        </div> -->
+      </section>
+    </div>
+  </body>
+</html>

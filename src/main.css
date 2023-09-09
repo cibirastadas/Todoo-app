@@ -1,0 +1,142 @@
+:root {
+  --yellow: rgba(253, 230, 138);
+  --active-yellow: rgba(252, 211, 77);
+  --green: rgba(110, 231, 183);
+  --active-green: rgba(16, 185, 129);
+  --red: rgba(252, 165, 165);
+  --active-red: rgb(235, 92, 92);
+}
+
+html {
+  min-height: 100vh;
+  min-height: 100vh;
+  background-image: linear-gradient(#93c5fd, #d1d5db);
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+
+}
+
+.content {
+  padding-top: 100px;
+  width: 700px;
+  margin: auto;
+}
+
+/* HEADERS */
+.header {
+  color: white;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  padding: 24px;
+}
+
+/* SUBTITLES */
+
+.subtitle {
+  color: white;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1px;
+  line-height: 15px;
+  text-align: center;
+}
+
+/* BUTTONS */
+.button {
+  cursor: pointer;
+  transition-duration: 150ms;
+  border: none;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  padding:4px;
+}
+
+.button--icon {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+
+.button--yellow {
+  background-color: var(--yellow);
+}
+
+.button--yellow:hover {
+  background-color: var(--active-yellow);
+}
+
+.button--green {
+  background-color: var(--green);
+}
+
+.button--green:hover {
+  background-color: var(--active-green);
+}
+.button--red {
+  background-color: var(--red);
+}
+
+.button--red:hover {
+  background-color: var(--active-red);
+}
+
+/* FORMS */
+.add-task-form {
+  height: 100%;
+  display: flex;
+}
+
+.add-task-form__input {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  line-height: 1;
+  padding: 0.75rem;
+  border-width: 0px;
+  width: 100%;
+}
+
+/* LISTS */
+
+.task-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.task-list__item {
+  display: flex;
+  column-gap: 8px;
+}
+
+.task-list__input {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  padding: 0.75rem;
+  border-width: 0px;
+  outline: none;
+  width: 100%;
+  border-radius: 9999px;
+}
+
+.task-list__actions {
+  display: flex;
+}
+
+/* ICONS */
+.icon {
+  width: 20px;
+  height: 20px;
+}
