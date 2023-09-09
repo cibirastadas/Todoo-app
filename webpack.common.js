@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 module.exports = {
   entry: {
     bundle: "./src/features/todoList.js",
-    nav: "./src/features/navBar.js",
+    nav: "./src/components/NavBar.js",
   },
   output: {
     filename: "[name].[contenthash].js",
