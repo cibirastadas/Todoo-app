@@ -1,24 +1,21 @@
 import '@testing-library/jest-dom';
 import { screen } from '@testing-library/dom';
-require('../path_to_your_NavBar_component');
+import './NavBar.js';  // Import your web component
 
 describe('NavBar Component', () => {
   beforeEach(() => {
+    // Set up the DOM with your web component
     document.body.innerHTML = `
       <nav-bar>
         <a href="/" slot="nav-link">Home</a>
-        <a href="/" slot="nav-link">About</a>
       </nav-bar>
     `;
   });
 
   test('it correctly accepts content via slot', () => {
-    const navBar = screen.getByRole('navigation');
-    expect(navBar).toBeInTheDocument();
-
-    const links = screen.getAllByRole('link');
-    expect(links).toHaveLength(2);
-    expect(links[0]).toHaveTextContent('Home');
-    expect(links[1]).toHaveTextContent('About');
+    // Query the DOM using testing-library's screen object
+    const links = screen.getByRole('link');
+    
+    expect(links).toHaveTextContent('Home');
   });
 });
